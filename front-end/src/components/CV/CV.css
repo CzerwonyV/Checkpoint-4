@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@font-face {
+  font-family: "Cooper Hewitt";
+    src: url(../../font/cooper-hewitt/CooperHewitt-Bold.otf);
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+}
+
+.TitleInText {
+    margin: 0;
+    font-family: "Cooper Hewitt";
+    margin-top: 1vh;
+  }
+  
+  .TitleGroup {
+    font-size: 1.5rem;
+    border-bottom: solid #03DAC6;
+    margin-bottom: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-family: "Cooper Hewitt";
+  }
+  
+  .LeftPart {
+    background-color: black;
+    padding: 3vh;
+    color: white;
+    width: 40%;
+    padding-top: 1.5vh;
+  }
+  
+  #GeneralSkill {
+    margin-top: 0.7rem;
+  }
+  
+  .RigthPart {
+    background-color: white;
+    padding: 3vh;
+    color: black;
+    width: 80%;
+    padding-bottom: 0;
+    padding-top: 2vh;
+  }
+  
+  .CVContent {
+    display: flex;
+    flex-direction: row;
+    padding: 2vh;
+    background-color: #121212;
+  }
+  
+  .TextGroupFormations {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .TitleInTextFormation {
+    float: left;
+    margin-top: 0;
+  }
+  
+  .TextContactCV {
+    color: white;
+  }
+  
+  .TextContactCV:hover {
+    color: white;
+  }
+
+  .FormationTextContent {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .TextMotivMobil{
+    display: none;
+    font-family: "Cooper Hewitt";
+  }
+
+  .TextMotivDestock{
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+
+  .TitleProject {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .RigthPartText {
+    text-align: justify;
+  }
+
+  .TextFormationDestock {
+    text-align: justify;
+  }
+
+  @media screen and (max-width: 586px) {
+    .CVContent {
+      display: flex;
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+
+    .TitleProject {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .LeftPart {
+      width: auto;
+    }
+  
+    .RigthPart {
+      width: auto;
+      padding-top: 2vh;
+    }
+
+    .TextMotivDestock{
+      display: none;
+    }
+
+    .TextMotivMobil{
+      display: block;
+      font-size: 1.2rem;
+    }
+
+    .TextFormationMobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .RigthPartText {
+      text-align: center;
+    }
+  
+    .TextFormationDestock {
+      text-align: center;
+    }
+  }

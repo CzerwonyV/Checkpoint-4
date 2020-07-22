@@ -1,0 +1,39 @@
+.TextContact {
+    color: #FFFFFF;
+    font-family: "Cooper Hewitt";
+  }
+
+  .ContactContent {
+    background-color: #121212;
+  }
+
+  .list-group-item {
+    background-color: white !important;
+    margin: 1vh;
+    background-color: #121212 !important;
+    text-align: center;
+    border: 0 !important;
+}
+  
+  #BtnContactDestock {
+    background-color: #03DAC5 !important;
+    border-color: #03DAC5 !important;
+    color: #FFFFFF !important;
+  }
+
+.dropdown-menu {
+  background-color: #121212 !important;
+  border-radius: .25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 767px) {
+  .list-group-item {
+    background-color: white !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 1vh;
+    background-color: #121212 !important;
+    text-align: center;
+    border-radius: .25rem !important;
+  }
+}

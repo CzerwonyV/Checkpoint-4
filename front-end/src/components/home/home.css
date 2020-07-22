@@ -1,0 +1,87 @@
+.PortFolioCard {
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    }
+  
+    #PortFolioCard1{
+      border-radius: 0;
+    }
+  
+    .PortFolioContent {
+      background-color: #121212;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .PortFolioContentCard {
+      column-count: 2;
+      flex-direction: column-reverse;
+    }
+  
+    .ActuContent {
+      display: flex;
+      flex-direction: row;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      border-radius: .25rem;
+      margin: 4vh;
+      background-color: #1d1d1d;
+      margin-bottom: 0;
+      justify-content: space-between;
+      margin-bottom: 4vh;
+    }
+  
+    .ActuGauche {
+      padding: 1vh;
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .ActuDroite {
+      height: 100%;
+      padding: 1.5vh;
+    }
+  
+    .TextActu {
+      color: #FFF;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  
+    #TextActuBottom {
+      margin-bottom: 0;
+      padding-bottom: 2vh;
+    }
+
+    .ActuDroite iframe {
+        height: 500px !important;
+        width: 500px !important;
+    }
+
+    @media screen and (max-width: 767px) {
+      .PortFolioContentCard {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      .card-img-top {
+        height: 100%;
+      }
+  
+      .ActuContent {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      .ActuGauche {
+        width: 100%;
+      }
+  
+      .TitleActu {
+        margin-bottom: -1vh;
+    }
+}
+  

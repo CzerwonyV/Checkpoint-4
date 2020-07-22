@@ -1,0 +1,87 @@
+.linkNavBar {
+    color: #FFFFFF;
+    font-family: "Cooper Hewitt";
+  }
+  
+  .linkNavBar:hover {
+    color: #FFFFFF;
+    text-decoration: underlines;
+  }
+  
+  .linkTitleNavBar {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-family: "Cooper Hewitt";
+  }
+
+  .navbar {
+    padding: 0 !important;
+    padding-left: 3vh !important;
+    padding-right: 3vh !important;
+  }
+
+  .NavBarBack {
+    background-color: #121212;
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .linkTitleNavBar:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  #TextNavBar {
+    color: #FFFFFF;
+    font-family: "Cooper Hewitt";
+  }
+  
+  .NavBarContent {
+    background-color: #03DAC5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .linkNavBarPDFMobile {
+    display: none;
+    margin: 0;
+    font-family: "Cooper Hewitt";
+  }
+
+  #ContactMobil {
+    display: none;
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("https://user-images.githubusercontent.com/57908921/85213243-f7434c00-b35b-11ea-84c4-6dca0b284e04.png") !important;
+  }
+
+  .navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.1);
+    font-size: 1.6rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    #TextNavBar {
+      display: none;
+    }
+  
+    .linkNavBarPDFMobile {
+      display: block;
+    }
+
+    .linkNavBar {
+      font-size: 1.1rem;
+    }
+
+    #ContactMobil {
+      display: block;
+    }
+
+    #ContactDestock {
+      display: none;
+    }
+  }

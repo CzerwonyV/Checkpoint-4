@@ -1,0 +1,72 @@
+.IconBackground {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+  }
+
+  .BtnLinkedinNav {
+    padding-right: 0 !important;
+  }
+
+  .CercleBtn {
+    border-radius: 50%;
+    width: 8.307372793354102vh;
+    height: 8.307372793354102vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 1vh;
+    margin-right: 2vh;
+  }
+
+  .ImgWild {
+    width: 100% !important;
+  }
+
+  .BtnWild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .BtnActuContent {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .TitleActuContent {
+    display: flex;
+    align-items: center;
+  }
+
+  .TitleActu {
+    font-family: "Cooper Hewitt";
+    color: #FFF;
+    font-size: 1.7rem;
+    margin-left: 1vh;
+  }
+
+  .ADL {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .ImgDL {
+    width: 55%;
+  }
+
+  @media screen and (max-width: 767px) {
+    .IconNav {
+      display: none;
+    }
+
+    .CercleBtn {
+      width: 6.787330316742081vh;
+      height: 6.787330316742081vh;
+    }
+
+    .BtnDLContent {
+      display: none;
+    }
+  }
