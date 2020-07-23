@@ -1,13 +1,13 @@
 .TextContact {
     color: #FFFFFF;
     font-family: "Cooper Hewitt";
-  }
+}
 
-  .ContactContent {
+.ContactContent {
     background-color: #121212;
-  }
+}
 
-  .list-group-item {
+.list-group-item {
     background-color: white !important;
     margin: 1vh;
     background-color: #121212 !important;
@@ -15,11 +15,12 @@
     border: 0 !important;
 }
   
-  #BtnContactDestock {
+#BtnContactDestock {
     background-color: #03DAC5 !important;
     border-color: #03DAC5 !important;
     color: #FFFFFF !important;
-  }
+    font-family: "Cooper Hewitt";
+}
 
 .dropdown-menu {
   background-color: #121212 !important;
