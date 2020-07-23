@@ -25,18 +25,15 @@ app.listen(process.env.PORT, (err) => {
 });
 
 app.get('/', authenticateWithJwt, (req, res) =>{
-    res.status(200).json('hello tonton sommelier');
+    res.status(200).json('hello');
 });
 
-
-app.use('/actu',authenticateWithJwt, actu);
-app.use('/rdv',authenticateWithJwt, rdv);
-app.use('/sitecard',authenticateWithJwt, sitecard);
-
+app.use('/sitecard', sitecard);
+app.use('/actu', actu);
+app.use('/rdv', rdv);
 
 app.post('/admin/register', (req, res) => {
     const formData = req.body;
-    
     if ((formData.username == null || formData.username === '') || (formData.password == null || formData.password === '')) {
       res.status(422).json("Vous vous êtes mal enregistré");
     } else {
@@ -83,9 +80,9 @@ app.post('/admin', (req, res) => {
             } else {
                 res.status(400).send("connexion refusée");
             } 
-            });
+          });
         }
-        });
+      });
     }
 });
   
