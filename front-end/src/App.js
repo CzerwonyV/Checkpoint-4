@@ -28,7 +28,7 @@ class App extends React.Component {
             <Route path="/contact" component={ContactMobile} />
             <Route path="/actuadmin" component={withAuth(ActuAdmin)} />
             <Route path="/sitecardadmin" component={withAuth(SiteCardAdmin)} />
-            <Route path="/dashboardadmin" component={withAuth(DashboardAdmin)} />
+            <Route path="/dashboardadmin" component={DashboardAdmin} />
             <Route path="/adminlog" component={LoginAdmin} />
             <Route path="/error" component={NotFound} />
             <Route path="/" component={Home} />
