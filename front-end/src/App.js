@@ -4,8 +4,6 @@ import CV from './components/CV/CV';
 import ContactMobile from './components/contact/contactMobile';
 import Home from './components/home/home';
 import { connect } from 'react-redux';
-import ActuAdmin from './components/admin/actuAdmin';
-import SiteCardAdmin from './components/admin/siteCardAdmin';
 import LoginAdmin from './components/admin/loginAdmin';
 import NotFound from './components/admin/notfound';
 import DashboardAdmin from './components/admin/dashboardAdmin';
@@ -26,9 +24,7 @@ class App extends React.Component {
           <Switch>
             <Route path="/cv" component={CV} />
             <Route path="/contact" component={ContactMobile} />
-            <Route path="/actuadmin" component={withAuth(ActuAdmin)} />
-            <Route path="/sitecardadmin" component={withAuth(SiteCardAdmin)} />
-            <Route path="/dashboardadmin" component={DashboardAdmin} />
+            <Route path="/dashboardadmin" component={withAuth(DashboardAdmin)} />
             <Route path="/adminlog" component={LoginAdmin} />
             <Route path="/error" component={NotFound} />
             <Route path="/" component={Home} />
