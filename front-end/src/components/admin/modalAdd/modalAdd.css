@@ -3,4 +3,30 @@
     border: #03dac5 !important;
     margin: 1vh !important;
     font-family: "Cooper Hewitt";
+    box-shadow: 0 2px 4px #03DAC5;
+}
+
+.modal-content {
+    background-color: #272727 !important;
+}
+
+.LabelForm {
+    color: #FFF !important;
+}
+
+.modal-header {
+    color: #FFF !important;
+}
+
+.BtnAddDiv {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    height: 20vh !important;
+}
+
+.CloseModal {
+    color: #FFF !important;
 }
