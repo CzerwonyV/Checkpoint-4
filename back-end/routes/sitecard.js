@@ -33,9 +33,9 @@ router.get('/:id', (req, res) => {
 
 /* ----- POST sitecard ----- */
 
-router.post('/', (req, res) => {
+router.post('/add', (req, res) => {
     const formData = req.body;
-    if (formData.info == null || formData.info === '') {
+    if ((formData.imgurl == null || formData.imgurl === '') || (formData.name == null || formData.name === '') || (formData.textexplication == null || formData.textexplication === '') || (formData.urlsite == null || formData.urlsite === '') || (formData.urlgithub == null || formData.urlgithub === '')) {
       res.status(400).send("Les données de sitecard sont mal renseigné");
     } else {
       connection.query('INSERT INTO sitecard SET ?', formData, (err, results) => {
