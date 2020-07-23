@@ -39,3 +39,80 @@
     padding: 2vh;
     z-index: 2;
 }
+
+.DashboardAdminContent {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.BtnSettingContent {
+    margin-right: -2vh;
+}
+
+.linkNavBarAdmin {
+    font-size: 1.3rem;
+    display: none;
+}
+
+.NavBarAdminLast:hover {
+    border: 0;
+}
+
+.NavBarContentDashboard {
+    padding-right: 0 !important;
+    background-color: #121212;
+    border: solid 0.2rem #03DAC5;
+}
+
+.DashboardAdminLeft {
+    width: 10%;
+    background-color: #03DAC5;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.linkNavBarAdminLeft {
+    font-size: 1.5rem;
+    color: #FFF;
+    font-family: "Cooper Hewitt";
+}
+
+.linkNavBarAdminLeft:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: solid #FFFFFF;
+}
+
+.LinkDivDashboardAdminLeft {
+    padding: 1.5vh;
+    text-align: center;
+}
+
+.DashboardMidlle {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.DashboardAdminRight {
+    width: 90%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: .25rem;
+    margin: 3vh;
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .DashboardAdminLeft {
+      display: none;
+    }
+
+    .linkNavBarAdmin {
+        display: block;
+    }
+  }
