@@ -20,6 +20,7 @@
     border-color: #03DAC5 !important;
     color: #FFFFFF !important;
     font-family: "Cooper Hewitt";
+    box-shadow: 0 2px 4px #03DAC5;
 }
 
 .dropdown-menu {
