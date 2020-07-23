@@ -15,6 +15,7 @@ import BtnGithub from "../button/btnGithub";
 import BtnLinkedin from "../button/btnLinkedin";
 import BtnTwitter from "../button/btnTwitter";
 import "./navbar.css";
+import BtnAdmin from "../admin/btnAdmin";
 
 const NavBarCV = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,6 +64,9 @@ const NavBarCV = () => {
                 </NavLink>
               </NavItem>
             </Nav>
+            <NavItem className="IconNav">
+              <BtnAdmin />
+            </NavItem>
             <NavItem className="IconNav">
               <BtnTwitter />
             </NavItem>
