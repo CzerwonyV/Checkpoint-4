@@ -5,7 +5,8 @@
   
   .linkNavBar:hover {
     color: #FFFFFF;
-    text-decoration: underlines;
+    text-decoration: none;
+    border-bottom: solid #FFFFFF;
   }
   
   .linkTitleNavBar {

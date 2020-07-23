@@ -10,13 +10,14 @@ import {
   NavbarText
 } from "reactstrap";
 import { Link } from "react-router-dom";
+import { connect } from 'react-redux';
 import ContactDestock from "../contact/contactDestock";
 import BtnGithub from "../button/btnGithub";
 import BtnLinkedin from "../button/btnLinkedin";
 import BtnTwitter from "../button/btnTwitter";
 import "./navbar.css";
 
-const NavBarCV = props => {
+const NavBarCV = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -41,13 +42,13 @@ const NavBarCV = props => {
               </NavItem>
               <NavItem>
                 <NavLink id="ContactMobil">
-                  <Link className="linkNavBar" to="/contact">
+                  <Link to="/contact">
                     Contact
                   </Link>
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink id="ContactDestock"  className="linkNavBar">
+                <NavLink id="ContactDestock">
                 <ContactDestock />
                 </NavLink>
               </NavItem>
@@ -79,4 +80,8 @@ const NavBarCV = props => {
   );
 };
 
-export default NavBarCV;
+const mapStateToProps = (state) => ({
+    token: state.reducer.token,
+  });
+
+export default connect(mapStateToProps)(NavBarCV);
