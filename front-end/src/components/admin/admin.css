@@ -1,0 +1,41 @@
+.NotFoundContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-size: 2.5rem;
+}
+
+.FormContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-top: -10vh;
+}
+
+.DivInput {
+    margin: 2vh !important;
+}
+
+.LabelForm {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.BtnLoginDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.BtnLogin {
+    background-color: #03dac5 !important;
+    margin: 2vh !important;
+    border: #03dac5 !important;
+}
+
+.HomeLogo {
+    padding: 2vh;
+    z-index: 2;
+}
