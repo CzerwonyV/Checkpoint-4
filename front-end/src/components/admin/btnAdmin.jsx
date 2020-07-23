@@ -1,6 +1,11 @@
 import React from "react";
 import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
+import { Button } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faCog
+  } from "@fortawesome/free-solid-svg-icons";
 import './admin.css'; 
 
 let BtnAdminContent = { display: "block" };
@@ -17,9 +22,11 @@ class BtnAdmin extends React.Component{
         if (token != null ) {
             return (
                 <div style={BtnAdminContent} className="BtnSettingContent" >
-                    <Link to="/dashboardadmin" className="BtnSetting">
-                        <img src="https://user-images.githubusercontent.com/57908921/88267180-c34ba580-ccd0-11ea-8fbd-4a9a8ab56e07.png" alt="Setting" width="70%" />
-                    </Link>
+                    <Button color="link" className="BtnSetting">
+                        <Link to="/dashboardadmin" >
+                            <FontAwesomeIcon icon={faCog} className="IconBackground" />
+                        </Link>
+                    </Button>
                 </div>
             );
         } else {
