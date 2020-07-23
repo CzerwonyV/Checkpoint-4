@@ -45,7 +45,7 @@
       padding: 1.5vh;
     }
   
-    .TextActu {
+    .ActuText {
       color: #FFF;
       font-size: 1.2rem;
       text-align: center;
@@ -60,6 +60,47 @@
         height: 500px !important;
         width: 500px !important;
     }
+
+    .ActuList {
+      flex: 1;
+    }
+
+    .card-body {
+      text-align: center;
+    }
+    
+    .btn-secondary {
+      background-color: #03dac5 !important;
+      border-color: #03dac5 !important;
+      color: #FFF !important;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .btn-secondary:hover {
+      background-color: #03dac5 !important;
+      border-color: #03dac5 !important;
+      color: #FFF !important;
+    }
+  
+  #SpaceButton{
+    margin-left: 1vh;
+  }
+  
+  .card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    border: 0 !important;
+    background-color: #212121 !important;
+    color: #FFFFFF;
+    margin-bottom: 4vh;
+    margin-left: 4vh;
+    margin-right: 4vh;
+  }
+  
+  .TitleGroupCard {
+    font-size: 1.5rem;
+    font-family: "Cooper Hewitt";
+  }
+  
 
     @media screen and (max-width: 767px) {
       .PortFolioContentCard {
@@ -83,5 +124,9 @@
       .TitleActu {
         margin-bottom: -1vh;
     }
+
+      .CardContent {
+        margin-top: 2vh;
+      } 
 }
   
