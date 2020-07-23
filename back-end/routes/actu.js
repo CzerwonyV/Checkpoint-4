@@ -33,7 +33,7 @@ router.get('/:id', (req, res) => {
 
 /* ----- POST actu ----- */
 
-router.post('/', (req, res) => {
+router.post('/add', (req, res) => {
     const formData = req.body;
     if (formData.text == null || formData.text === '') {
       res.status(400).send("Le text de l'actu est mal renseigné");
