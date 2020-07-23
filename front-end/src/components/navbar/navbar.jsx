@@ -10,7 +10,6 @@ import {
   NavbarText
 } from "reactstrap";
 import { Link } from "react-router-dom";
-import { connect } from 'react-redux';
 import ContactDestock from "../contact/contactDestock";
 import BtnGithub from "../button/btnGithub";
 import BtnLinkedin from "../button/btnLinkedin";
@@ -80,8 +79,4 @@ const NavBarCV = () => {
   );
 };
 
-const mapStateToProps = (state) => ({
-    token: state.reducer.token,
-  });
-
-export default connect(mapStateToProps)(NavBarCV);
+export default NavBarCV;
