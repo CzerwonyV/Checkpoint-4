@@ -1,12 +1,25 @@
 import React from "react";
-import './admin.css';
+import axios from 'axios';
+import "./admin.css";
 
-const ActuAdmin = () => {
-  return (
-    <div className="ActuAdminContent">
-        CA MARCHE
-    </div>
-  );
-};
-
-export default ActuAdmin;
+export default class ActuAdmin extends React.Component {
+    state = {
+      actu: []
+    }
+  
+    componentDidMount() {
+      axios.get(`http://localhost:8000/actu`)
+        .then(res => {
+          const actu = res.data;
+          this.setState({ actu });
+        })
+    }
+  
+    render() {
+      return (
+        <div className="ActuList ActuAdminContent">
+          { this.state.actu.map(actu => <p className="ActuText ActuTextAdmin">{actu.text}</p>)}
+        </div>
+      )
+    }
+  }
