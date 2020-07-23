@@ -42,7 +42,7 @@ const NavBarCV = () => {
               </NavItem>
               <NavItem>
                 <NavLink id="ContactMobil">
-                  <Link to="/contact">
+                  <Link className="linkNavBar" to="/contact">
                     Contact
                   </Link>
                 </NavLink>
@@ -63,10 +63,12 @@ const NavBarCV = () => {
                   </a>
                 </NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink id="ContactMobil">
+                  <BtnAdmin />
+                </NavLink>
+              </NavItem>
             </Nav>
-            <NavItem className="IconNav">
-              <BtnAdmin />
-            </NavItem>
             <NavItem className="IconNav">
               <BtnTwitter />
             </NavItem>
@@ -75,6 +77,9 @@ const NavBarCV = () => {
             </NavItem>
             <NavItem className="IconNav">
               <BtnGithub />
+            </NavItem>
+            <NavItem className="IconNav">
+              <BtnAdmin />
             </NavItem>
             <NavbarText id="TextNavBar">Développement Web</NavbarText>
           </Collapse>
