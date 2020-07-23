@@ -15,11 +15,11 @@ CREATE TABLE `admin`(
 
 CREATE TABLE `sitecard` (
     `id` INT NOT NULL AUTO_INCREMENT,
-    `img` LONGBLOB NOT NULL,
-    `name` VARCHAR(100),
-    `textexplication` VARCHAR(500),
-	`urlsite` VARCHAR(500),
-    `urlgithub` VARCHAR(500),
+    `imgurl` VARCHAR(500) NOT NULL,
+    `name` VARCHAR(100) NOT NULL,
+    `textexplication` VARCHAR(500) NOT NULL,
+	`urlsite` VARCHAR(500) NOT NULL,
+    `urlgithub` VARCHAR(500) NOT NULL,
     PRIMARY KEY (`id`)
 );
 
